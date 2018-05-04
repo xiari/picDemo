@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="fresh_tracking@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="student_manager">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="cat"/>
+    <schema id="4" parent="1" name="dbtbl_0"/>
+    <schema id="5" parent="1" name="dbtbl_1"/>
+    <schema id="6" parent="1" name="dbtbl_config"/>
+    <schema id="7" parent="1" name="ds_0"/>
+    <schema id="8" parent="1" name="ds_1"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="mysql"/>
+    <schema id="11" parent="1" name="performance_schema"/>
+    <schema id="12" parent="1" name="spring"/>
+    <schema id="13" parent="1" name="springboot"/>
+    <schema id="14" parent="1" name="sys"/>
+    <schema id="15" parent="1" name="fresh_tracking">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="16" parent="15" name="picture_info">
+      <Comment>图片基础信息表</Comment>
+    </table>
+    <table id="17" parent="15" name="user_info">
+      <Comment>用户信息表</Comment>
+    </table>
+    <table id="18" parent="15" name="user_session_info">
+      <Comment>用户session记录</Comment>
+    </table>
+    <column id="19" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="16" name="pic_name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="21" parent="16" name="pic_qury_url">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="22" parent="16" name="pic_seq_no">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="23" parent="16" name="create_time">
+      <Position>5</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <column id="24" parent="16" name="encoded_url">
+      <Position>6</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="25" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="26" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="27" parent="17" name="open_id">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="28" parent="17" name="nick_name">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="29" parent="17" name="avatarUrl">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="30" parent="17" name="gender">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="31" parent="17" name="city">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="32" parent="17" name="province">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="33" parent="17" name="country">
+      <Position>8</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="34" parent="17" name="create_time">
+      <Position>9</Position>
+      <DataType>timestamp|0</DataType>
+    </column>
+    <key id="35" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="18" name="open_id">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="38" parent="18" name="session_key">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="39" parent="18" name="status">
+      <Position>4</Position>
+      <DataType>varchar(2)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="40" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
